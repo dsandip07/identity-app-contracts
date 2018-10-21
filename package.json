@@ -1,0 +1,25 @@
+{
+  "name": "identity-app-contracts",
+  "version": "1.0.0",
+  "description": "Identity App Contracts",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsandip07/identity-app-contracts.git"
+  },
+  "keywords": [
+    "identity"
+  ],
+  "author": "Sandip Dey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsandip07/identity-app-contracts/issues"
+  },
+  "homepage": "https://github.com/dsandip07/identity-app-contracts#readme"
+}
