@@ -2,12 +2,22 @@
   "name": "identity-app-contracts",
   "version": "1.0.0",
   "description": "Identity App Contracts",
-  "main": "index.js",
+  "main": "build/contracts/UportRegistry.json",
   "directories": {
     "test": "test"
   },
+  "devDependencies": {
+    "ethereumjs-testrpc": "^3.0.3",
+    "mocha": "^2.4.5",
+    "standard": "^9.0.2",
+    "truffle": "^3.2.1",
+    "truffle-contract": "^2.0.0",
+    "web3": "^0.16.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-contract": "./node_modules/.bin/truffle compile",
+    "lint": "./node_modules/.bin/standard"
   },
   "repository": {
     "type": "git",
@@ -21,5 +31,17 @@
   "bugs": {
     "url": "https://github.com/dsandip07/identity-app-contracts/issues"
   },
-  "homepage": "https://github.com/dsandip07/identity-app-contracts#readme"
+  "homepage": "https://github.com/dsandip07/identity-app-contracts#readme",
+  "standard": {
+    "ignore": [
+      "dist/**",
+      "lib/**"
+    ],
+    "globals": [
+      "artifacts",
+      "describe",
+      "it",
+      "before"
+    ]
+  }
 }
